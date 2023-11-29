@@ -18,6 +18,7 @@
     </style>
 </head>
 <body>
+    <!-- Contenedor principal al inicio -->
     <div class="container text-center mt-4" id="inicio">
         <div class="circular-image mx-auto mb-4">
             <img src="imgenes/foto.jpg" alt="centered image" id="foto" class="img-fluid" style="max-width: 135px;">
@@ -27,6 +28,7 @@
         <hr>
     </div>
     
+    <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Menú</a>
@@ -52,6 +54,7 @@
         </div>
     </nav>
 
+    <!-- Contenido de las secciones -->
     <div class="container mt-4">
         <!-- Información Personal -->
         <section id="informacion-personal" style="display: none;">
@@ -93,9 +96,11 @@
         </section>
     </div>
     
+    <!-- Scripts -->
     <script>
         function mostrar(id) {
             // Oculta todos los elementos
+            document.getElementById('inicio').style.display = 'none';
             document.getElementById('informacion-personal').style.display = 'none';
             document.getElementById('resumen').style.display = 'none';
             document.getElementById('experiencia').style.display = 'none';
