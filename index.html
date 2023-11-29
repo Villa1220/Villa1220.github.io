@@ -70,7 +70,7 @@
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">≡</a>
+            <a class="navbar-brand" href="#">Menú</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -139,13 +139,13 @@
     <script>
         function mostrar(id) {
             // Oculta todos los elementos
+            document.getElementById('inicio').style.display = 'none';
             document.getElementById('informacion-personal').style.display = 'none';
             document.getElementById('resumen').style.display = 'none';
             document.getElementById('experiencia').style.display = 'none';
             document.getElementById('educacion').style.display = 'none';
 
-            // Muestra el contenedor principal y el elemento correspondiente al ID
-            document.getElementById('inicio').style.display = 'block';
+            // Muestra el elemento correspondiente al ID
             document.getElementById(id).style.display = 'block';
         }
     </script>
