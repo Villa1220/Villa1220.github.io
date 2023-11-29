@@ -139,15 +139,14 @@
     <script>
         function mostrar(id) {
             // Oculta todos los elementos
-            document.getElementById('inicio').style.display = 'none';
             document.getElementById('informacion-personal').style.display = 'none';
             document.getElementById('resumen').style.display = 'none';
             document.getElementById('experiencia').style.display = 'none';
             document.getElementById('educacion').style.display = 'none';
 
-            // Muestra el elemento correspondiente al ID
-            document.getElementById(id).style.display = 'block';
+            // Muestra el contenedor principal y el elemento correspondiente al ID
             document.getElementById('inicio').style.display = 'block';
+            document.getElementById(id).style.display = 'block';
         }
     </script>
 
