@@ -3,6 +3,11 @@ PAGINA WEB CON MI INFORMACION PERSONAL
 ## Descripcion
 Esta pagina esta realizada para dar a conocer un poco sobre mi
 ## Capturas de pantalla
+<img src="./imgenes/1.png" alt="">
+        <img src="./imgenes/2.png" alt="">
+        <img src="./imgenes/3.png" alt="">
+        <img src="./imgenes/4.png" alt="">
+        <img src="./imgenes/5.png" alt="">
 
 ## Instrucciones de Uso
 
