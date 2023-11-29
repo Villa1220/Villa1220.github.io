@@ -18,6 +18,15 @@
     </style>
 </head>
 <body>
+    <div class="container text-center mt-4" id="inicio">
+        <div class="circular-image mx-auto mb-4">
+            <img src="imgenes/foto.jpg" alt="centered image" id="foto" class="img-fluid" style="max-width: 135px;">
+        </div>
+        <h1 class="display-4">Paul  Villacis</h1>
+        <p class="lead">Estudiante de Ingeniería en Software</p>
+        <hr>
+    </div>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="#">Menú</a>
@@ -27,34 +36,25 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#informacion-personal">Información Personal</a>
+                        <a class="nav-link" href="#informacion-personal" onclick="mostrar('informacion-personal')">Información Personal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#resumen">Resumen</a>
+                        <a class="nav-link" href="#resumen" onclick="mostrar('resumen')">Resumen</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiencia Laboral</a>
+                        <a class="nav-link" href="#experiencia" onclick="mostrar('experiencia')">Experiencia Laboral</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#educacion">Educación</a>
+                        <a class="nav-link" href="#educacion" onclick="mostrar('educacion')">Educación</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container text-center mt-4">
-        <div class="circular-image mx-auto mb-4">
-            <img src="imgenes/foto.jpg" alt="centered image" id="foto" class="img-fluid" style="max-width: 135px;">
-        </div>
-        <h1 class="display-4">Paul  Villacis</h1>
-        <p class="lead">Estudiante de Ingeniería en Software</p>
-        <hr>
-    </div>
-    
     <div class="container mt-4">
         <!-- Información Personal -->
-        <section id="informacion-personal">
+        <section id="informacion-personal" style="display: none;">
             <h2 class="text-center">Información Personal</h2>
             <ul class="list-group">
                 <li class="list-group-item"><strong>Nombre:</strong> Paul Andres Villacis Leon</li>
@@ -66,14 +66,14 @@
         </section>
         
         <!-- Resumen -->
-        <section id="resumen">
+        <section id="resumen" style="display: none;">
             <h2 class="text-center">Resumen</h2>
             <p class="text-justify">Soy un joven estudiante de la carrera de Software, soy de la ciudad de Quito, tengo actualmente 23 años y decidí estudiar esta carrera por mi gusto por las computadoras. En este momento curso el cuarto semestre de esta carrera y estoy con toda actitud y determinación para seguir avanzando, seguir aprendiendo y culminar esta carrera.</p>
             <hr> <!-- Línea divisoria -->
         </section>
         
         <!-- Experiencia Laboral -->
-        <section id="experiencia">
+        <section id="experiencia" style="display: none;">
             <h2 class="text-center">Experiencia Laboral</h2>
             <p><strong>Proyectos de cursos</strong> - Desarrollador</p>
             <ul>
@@ -85,20 +85,28 @@
         </section>
         
         <!-- Educación -->
-        <section id="educacion">
+        <section id="educacion" style="display: none;">
             <h2 class="text-center">Educación</h2>
             <p><strong>Universidad Técnica de Ambato</strong> - Actualmente en 4to Semestre</p>
             <p><strong>Universidad Central del Ecuador</strong> - Carrera Ingeniería Agronómica - Aprobado hasta el segundo semestre</p>
             <p><strong>Colegio Nacional Andrés Bello</strong> - Bachiller en Ciencias promoción (2016-2017)</p>
         </section>
     </div>
-    <hr>
-    <div class="container text-center mt-4">
-        <p style="text-align:center">Derechos de autor © 2023 Paul Villacis</p>
-    </div>
     
+    <script>
+        function mostrar(id) {
+            // Oculta todos los elementos
+            document.getElementById('informacion-personal').style.display = 'none';
+            document.getElementById('resumen').style.display = 'none';
+            document.getElementById('experiencia').style.display = 'none';
+            document.getElementById('educacion').style.display = 'none';
+
+            // Muestra el elemento correspondiente al ID
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
-
 
