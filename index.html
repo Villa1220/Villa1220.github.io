@@ -1,13 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Paul Villacis</title>
+    <title>Información Personal</title>
+    <meta name="description" content="Mi hoja de vida personal">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+    <style>
+        /* Aplica estilos personalizados */
+        .circular-image {
+            width: 150px;
+            height: 150px;
+            border: 5px solid #007BFF;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center mt-4">
+        <div class="circular-image mb-4">
+            <img src="imgenes/foto.jpg" alt="Foto" class="img-fluid" style="max-width: 135px;">
+        </div>
+        <h1 class="display-4">Paul Villacis</h1>
+        <p class="lead">Estudiante de Ingeniería en Software</p>
+        <hr>
+    </div>
+    
+    <div class="container mt-4">
+        <!-- Información Personal -->
+        <section id="informacion-personal">
+            <h2 class="text-center">Información Personal</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Nombre:</strong> Paul Andres Villacis Leon</li>
+                <li class="list-group-item"><strong>Dirección:</strong> Ambato - Sta Rosa</li>
+                <li class="list-group-item"><strong>Teléfono:</strong> 0984266777</li>
+                <li class="list-group-item"><strong>Email:</strong> andresvillacis1220@gmail.com</li>
+            </ul>
+            <hr> <!-- Línea divisoria -->
+        </section>
+        
+        <!-- Resumen -->
+        <section id="resumen">
+            <h2 class="text-center">Resumen</h2>
+            <p class="text-justify">Soy un joven estudiante de la carrera de Software, soy de la ciudad de Quito, tengo actualmente 23 años y decidí estudiar esta carrera por mi gusto por las computadoras. En este momento curso el cuarto semestre de esta carrera y estoy con toda actitud y determinación para seguir avanzando, seguir aprendiendo y culminar esta carrera.</p>
+            <hr> <!-- Línea divisoria -->
+        </section>
+        
+        <!-- Experiencia Laboral -->
+        <section id="experiencia">
+            <h2 class="text-center">Experiencia Laboral</h2>
+            <p><strong>Proyectos de cursos</strong> - Desarrollador</p>
+            <ul>
+                <li>Desarrollo de sitios web dinámicos utilizando HTML, CSS y JavaScript.</li>
+                <li>Colaboración con equipos multidisciplinarios en proyectos de desarrollo.</li>
+                <li>Desarrollo de un sistema de facturación electrónica.</li>
+            </ul>
+            <hr> <!-- Línea divisoria -->
+        </section>
+        
+        <!-- Educación -->
+        <section id="educacion">
+            <h2 class="text-center">Educación</h2>
+            <p><strong>Universidad Técnica de Ambato</strong> - Actualmente en 4to Semestre</p>
+            <p><strong>Universidad Central del Ecuador</strong> - Carrera Ingeniería Agronómica - Aprobado hasta el segundo semestre</p>
+            <p><strong>Colegio Nacional Andrés Bello</strong> - Bachiller en Ciencias promoción (2016-2017)</p>
+        </section>
+    </div>
+    <hr>
+    <div class="container text-center mt-4">
+        <p>Derechos de autor © 2023 Paul Villacis</p>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
+</body>
 </html>
+
